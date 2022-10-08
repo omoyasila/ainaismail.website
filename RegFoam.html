@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="description"
+        content="student form">
+        <meta name="author"
+        content="Aina Ismail">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <link rel="stylesheet"
+        href="styles.css">
+        <style>
+             body{
+            margin:auto;
+            width:40vw;
+            height:80vw;
+            padding: 1vw;
+            background-color:#330066;
+            color: white;
+            }
+            h1{
+                text-align:center;
+                font-size:3vw;
+                font-weight: bold;
+            }
+            p{
+                font-size: 2vw;
+                word-spacing: 0.5vw;
+            }
+            label{
+                font-size: 2vw;
+                word-spacing: 0.5vw;
+            }
+            input.a{
+                font-size: 1.5vw;
+                word-spacing: 0.5vw;
+                width: 30vw;
+                background-color: #330033;
+            }
+
+            input{
+                font-size: 1.5vw;
+                word-spacing: 0.5vw;
+                background-color: #330033;
+            }
+     </style>
+    </head>
+<body>
+    <h1> Registration Form</h1>
+        <p>Please fill out this form with the required information.</p>
+        <form>
+            <label for="fname">Enter Your First Name:</label><br>
+            <input type="text" id="fname" name="fname" class="a"><br>
+            <label for="lname">Enter Your Last Name:</label><br>
+            <input type="text" id="lname" name="lname" class="a"><br>
+            <label for="email">Enter Your Email:</label><br>
+            <input type="email" id="email" name="email" class="a"><br>
+            <label for="passw">Create a New Password</label><br>
+            <input type="password" id="passw" name="passw" style="color:#ffffff" class="a"><br><br>
+            <hr style="width: 40vw; background-color:#ffffff"><br>
+            <input type="radio" id="Pa" name="pass_info" value="Personal Account">
+            <label for="Pa">Personal Account</label><br>
+            <input type="radio" id="Ba" name="pass_info" value="Buisness Account">
+            <label for="Ba">Buisness Account</label><br>
+            <input type="checkbox" id="Ta" name="terms_condition">
+            <label for="Ta">I accept the <ins>terms and conditions</ins></label><br><br>
+            <hr style="width: 40vw; background-color:#ffffff"><br>
+            <label for="pr">Upload a profile picture</label><br>
+            <input type="file" id="pr" name="pr" style="font: size 1vw;" class="a"><br>
+            <label for="age">Input your age(years):</label><br>
+            <input type="number" id="age" name="age" style="color: #ffffff;" min="1" max="100"><br>
+            <label for="fname">How did you hear about us?</label><br>
+            <select id="info" style="width:auto;font-size:1vw; word-spacing:0.5vw">
+            <option value="(select one)">(select one)</option>
+            <option value="Social Media">Social Media</option>
+            <option value="News">News</option>
+            <option value="Other">Other</option>
+            </select>
+            <p>Provide a bio<small>(not more than 50 words)</smalls>:</p>
+            <textarea name="message" 
+            style="width:30vw;
+            background-color: #330033; 
+            color: #ffffff;
+            font-size: 1vw; 
+            word-spacing: 0.2vw;" rows="5" column="10">I like coding on the beach...</textarea><br><br>
+            <input type="submit" value="Submit" class="a" style="text-align: center; color:#ffffff">
+
+        </form>
+
+</body>
+</html>            
